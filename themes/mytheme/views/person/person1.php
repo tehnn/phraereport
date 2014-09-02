@@ -25,8 +25,9 @@ $this->breadcrumbs = array(
                     'ext.booster.widgets.TbDatePicker', array(
                 'name' => 'date1',
                 'options' => array(
-                    'language' => 'th',
+                   
                     'format' => 'yyyy-mm-dd',
+                     'language' => 'th',
                     'autoclose' => true
                 ),
                       
@@ -37,7 +38,7 @@ $this->breadcrumbs = array(
                     'ext.booster.widgets.TbDatePicker', array(
                 'name' => 'date2',
                 'options' => array(
-                    'language' => 'th',
+                    'language' => 'TH',
                     'format' => 'yyyy-mm-dd',
                     'autoclose' => true
                 )
@@ -53,20 +54,22 @@ $this->breadcrumbs = array(
 
 
 <div style="float: right; margin: 5px">
-    <a href="#" download="somedata.xls" class="btn btn-success"  
+    <a href="#" download="somedata.xls" class="btn btn-danger"  
        onclick="return ExcellentExport.excel(this, 'datatable', 'Sheet Name');">
         Excel
     </a>
 
-    <a href="#" download="somedata.csv"  class="btn btn-primary"
+    <a href="#" download="somedata.csv"  class="btn btn-success"
        onclick="return ExcellentExport.csv(this, 'datatable', ',');">
-        CSV(,)
+        CSV
+    </a>
+    
+    <a href="<?php echo $this->createUrl('Person/Person1', array('isPdf'=>TRUE))?>" target="_blank"  class="btn btn-primary">
+        PDF
     </a>
 
-    <a download="somedata.csv" href="#" class="btn btn-danger"
-       onclick="return ExcellentExport.csv(this, 'datatable', '|');">
-        CSV(|)
-    </a>
+
+    
 </div>
 
 <table id="datatable" class="table table-hover table-striped table-responsive table-bordered">

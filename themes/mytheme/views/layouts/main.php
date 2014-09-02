@@ -54,13 +54,32 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li>
                                     <?php
-                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  ประชากรตามโครงสร้างประชากร ', array('Person/Index'));
+                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  หมวดที่ 1 บริหารจัดการข้อมูล', array('Person/Index'));
                                     ?>
                                 </li>
                                 <li class="divider"></li>                                
                                 <li>
                                     <?php
-                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  ประชากรตามกลุ่มวัย ', array('GroupAge/Index', 'id' => '123'));
+                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  หมวดที่ 2 ทรัพยากรสาธารณสุข', array('GroupAge/Index', 'id' => '123'));
+                                    ?>
+                                </li>
+                                
+                                <li class="divider"></li>                                
+                                <li>
+                                    <?php
+                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  หมวดที่ 3 กิจกรรมรักษาพยาบาล', array('GroupAge/Index', 'id' => '123'));
+                                    ?>
+                                </li>
+                                <li class="divider"></li>                                
+                                <li>
+                                    <?php
+                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  หมวดที่ 4 กิจกรรมส่งเสริมสุขภาพ', array('GroupAge/Index', 'id' => '123'));
+                                    ?>
+                                </li>
+                                <li class="divider"></li>                                
+                                <li>
+                                    <?php
+                                    echo CHtml::link('<i class="glyphicon glyphicon-folder-open"></i>  หมวดที่ 5 กิจกรรมดูแลผู้ป่วย และฟื้นฟูสมรรถภาพ', array('GroupAge/Index', 'id' => '123'));
                                     ?>
                                 </li>
 
